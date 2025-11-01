@@ -4,4 +4,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --texColor1: #ffffff;
+  --buttonColor: #ee626b;
+  --iconbg: #0071f8;
+  --navHoverColor: #1b7ffa;
+}
+.header-and-hero-section {
+  width: 100%;
+  height: auto;
+  background: url("./images/banner-bg.jpg");
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2.5rem 4.5rem;
+}
+.logo {
+  cursor: pointer;
+}
+.nav-and-navbtn {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+.hamburger {
+  display: none;
+}
+.nav {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.nav div {
+  width: fit-content;
+  height: auto;
+  padding: 0.6rem 1rem;
+  border-radius: 35px;
+}
+.nav div:hover {
+  background: var(--navHoverColor);
+}
+.nav div a {
+  text-decoration: none;
+  color: var(--texColor1);
+  font-weight: 300;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+.nav-btn {
+  width: fit-content;
+  height: auto;
+}
+.nav-btn button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  font-weight: 600;
+  background: var(--buttonColor);
+  color: var(--texColor1);
+  cursor: pointer;
 }
