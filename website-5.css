@@ -13,9 +13,12 @@
   --navHoverColor: #1b7ffa;
 }
 .header-and-hero-section {
+  position: relative;
   width: 100%;
   height: auto;
   background: url("./images/banner-bg.jpg");
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
 }
 header {
   width: 100%;
@@ -23,7 +26,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   padding: 2.5rem 4.5rem;
 }
 .logo {
@@ -54,6 +57,7 @@ header {
   height: auto;
   padding: 0.6rem 1rem;
   border-radius: 35px;
+  transition: all 0.5s ease;
 }
 .nav div:hover {
   background: var(--navHoverColor);
@@ -78,4 +82,154 @@ header {
   background: var(--buttonColor);
   color: var(--texColor1);
   cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 4rem 4.5rem 2rem 4.5rem;
+}
+.left-hand-side {
+}
+.intro-text {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.hero-section h1 {
+  font-size: clamp(2rem, 1.5vw + 2rem, 4rem);
+  color: var(--texColor1);
+  line-height: 60px;
+  margin-bottom: 2.5rem;
+}
+.inro-text-2 {
+  color: var(--texColor1);
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.search-bar {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-top: 3.5rem;
+}
+.search-input {
+  width: 100%;
+  height: auto;
+  padding: 0.9rem;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+}
+.search-btn {
+  border: none;
+  outline: none;
+  padding: 0.76rem 1.2rem;
+  border-radius: 35px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: var(--buttonColor);
+  color: var(--texColor1);
+  font-weight: 600;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background-color: #0171f9;
+}
+.right-hand-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+.right-hand-side-img {
+  width: 85%;
+  height: auto;
+  border-radius: 30px;
+}
+.right-hand-side-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.label {
+  position: absolute;
+  bottom: -1rem;
+  left: 1.7rem;
+  width: 100px;
+  height: 100px;
+  background: var(--buttonColor);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label p {
+  color: var(--texColor1);
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+.feature-div {
+  position: relative;
+  top: 6rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  text-align: center;
+}
+.feature {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+.icon {
+  margin-bottom: 1.5rem;
+}
+.icon span {
+  width: fit-content;
+  height: auto;
+  background: var(--iconbg);
+  padding: 1rem;
+  font-size: 4rem;
+  border-radius: 50%;
+  color: var(--texColor1);
+  transition: all 0.3s ease;
+}
+.feature:hover .icon1 span,
+.feature:hover .icon2 span,
+.feature:hover .icon3 span,
+.feature:hover .icon4 span {
+  background-color: var(--buttonColor);
+}
+.text {
+  width: fit-content;
+  height: auto;
+}
+.text p {
+  font-weight: 800;
 }
