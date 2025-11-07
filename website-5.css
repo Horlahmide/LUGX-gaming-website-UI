@@ -11,6 +11,8 @@
   --buttonColor: #ee626b;
   --iconbg: #0071f8;
   --navHoverColor: #1b7ffa;
+  --trendingGameCardbg: #eeeeee;
+  --trendingGameCardtextColor: #7a7a7a;
 }
 .header-and-hero-section {
   position: relative;
@@ -232,4 +234,159 @@ header {
 }
 .text p {
   font-weight: 800;
+}
+
+/* Trending Section */
+.trending-section {
+  width: 100%;
+  height: auto;
+  margin-top: 14rem;
+  padding: 0rem 4.5rem;
+}
+.intro-text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.trending-intro-text {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+.trending-intro-text p {
+  font-weight: 650;
+  color: var(--buttonColor);
+}
+.trending-intro-text h1 {
+  font-size: clamp(2rem, 2vw + 0.7rem, 3rem);
+}
+.intro-btn {
+  width: fit-content;
+  height: auto;
+}
+.intro-btn button {
+  border: none;
+  outline: none;
+  padding: 0.76rem 1.2rem;
+  border-radius: 35px;
+  color: var(--texColor1);
+  font-weight: 600;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background: var(--buttonColor);
+  transition: all 0.3s ease;
+}
+.intro-btn button:hover {
+  background: var(--iconbg);
+}
+.games-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.game-card {
+  width: 280px;
+  height: auto;
+  background: var(--trendingGameCardbg);
+  position: relative;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+}
+.game-card-image-container {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+}
+.game-card-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+}
+.price-tag {
+  width: 70px;
+  height: 70px;
+  background: var(--iconbg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+}
+.diff {
+  width: fit-content;
+  height: auto;
+  padding: 0.8rem 1rem;
+}
+.price-tag span {
+  color: var(--texColor1);
+}
+.original-price:not(.not-lined) {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+.not-lined {
+  font-weight: 600;
+}
+.current-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.game-card-content {
+  width: 100%;
+  height: auto;
+  /* padding: 1.2rem 1rem 1rem 1rem; */
+  padding: 1rem;
+}
+.game-genre {
+  font-size: 0.9rem;
+  color: var(--trendingGameCardtextColor);
+  margin-bottom: -2px;
+}
+.title-and-button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-title {
+  font-weight: 600;
+  font-size: 0.95;
+  transition: all 0.3s ease;
+}
+.buy-button {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--buttonColor);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.buy-button a {
+  color: var(--texColor1);
+}
+.game-card:hover .game-title {
+  color: var(--iconbg);
+}
+.game-card:hover .buy-button {
+  background: var(--iconbg);
 }
