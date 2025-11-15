@@ -357,12 +357,18 @@ header {
   box-shadow: 0 0 20px var(--primary-color);
 }
 
-.game-card-image-container img,
-.card-image-wrapper img,
-.category-game-card-img img {
+.game-card-image-container {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 200px; /* Set a fixed height for consistency */
+  overflow: hidden; /* Hide overflowing parts of the image */
+  border-radius: 20px; /* Apply border-radius here for consistency with card */
+}
+
+.game-card-image-container img {
+  width: 100%;
+  height: 100%; /* Make image fill the container height */
+  object-fit: cover; /* Crop image to fit without distortion */
+  border-radius: 20px; /* Apply border-radius here for consistency with card */
 }
 
 .price-tag {
